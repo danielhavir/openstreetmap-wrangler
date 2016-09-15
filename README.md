@@ -10,11 +10,11 @@ It does the following things:
 - if there is a second ":" that separates the type/direction of a street,
   the tag is ignored, for example:
 
-<tag k="addr:housenumber" v="5158"/>
-<tag k="addr:street" v="North Lincoln Avenue"/>
-<tag k="addr:street:name" v="Lincoln"/>
-<tag k="addr:street:prefix" v="North"/>
-<tag k="addr:street:type" v="Avenue"/>
+tag k="addr:housenumber" v="5158"/
+tag k="addr:street" v="North Lincoln Avenue"/
+tag k="addr:street:name" v="Lincoln"/
+tag k="addr:street:prefix" v="North"/
+tag k="addr:street:type" v="Avenue"/
 
   is turned into:
 
@@ -28,8 +28,8 @@ It does the following things:
 
 - for "way" specifically:
 
-  <nd ref="305896090"/>
-  <nd ref="1719825889"/>
+  nd ref="305896090"/
+  nd ref="1719825889"/
 
 is turned into
 "node_refs": ["305896090", "1719825889"]
