@@ -44,7 +44,7 @@ def shape_element(element):
             if key in CREATED:
                 node['created'][key] = value
             elif key == 'lat' or key == 'lon':
-                node['pos'].append(value)
+                node['pos'].append(float(value))
             else:
                 node[key] = value
         for child in element.findall('tag'):
