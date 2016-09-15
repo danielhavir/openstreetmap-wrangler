@@ -16,7 +16,7 @@ It does the following things:
 <tag k="addr:street:prefix" v="North"/>
 <tag k="addr:street:type" v="Avenue"/>
 
-  should be turned into:
+  is turned into:
 
 {...
 "address": {
