@@ -10,11 +10,11 @@ It does the following things:
 - if there is a second ":" that separates the type/direction of a street,
   the tag is ignored, for example:
 
-tag k="addr:housenumber" v="5158"/
-tag k="addr:street" v="North Lincoln Avenue"/
-tag k="addr:street:name" v="Lincoln"/
-tag k="addr:street:prefix" v="North"/
-tag k="addr:street:type" v="Avenue"/
+tag k="addr:housenumber" v="5158"/<br/>
+tag k="addr:street" v="North Lincoln Avenue"/<br/>
+tag k="addr:street:name" v="Lincoln"/<br/>
+tag k="addr:street:prefix" v="North"/<br/>
+tag k="addr:street:type" v="Avenue"/<br/>
 
   is turned into:
 
@@ -28,7 +28,7 @@ tag k="addr:street:type" v="Avenue"/
 
 - for "way" specifically:
 
-  nd ref="305896090"/
+  nd ref="305896090"/<br/>
   nd ref="1719825889"/
 
 is turned into
