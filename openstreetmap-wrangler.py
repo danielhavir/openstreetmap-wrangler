@@ -3,7 +3,8 @@ import re
 import codecs
 import json
 
-osm = "san-francisco_california.osm"
+area = ''
+osm = "{}.osm".format(area)
 
 last_word = re.compile(r'\b\S+\.?$', re.IGNORECASE)
 problemchars = re.compile(r'[=\+/&<>;\'"\?%#$@\,\. \t\r\n]')
@@ -65,7 +66,6 @@ def shape_element(element):
             for ref in element.findall('nd'):
                 node['node_refs'].append(ref.attrib['ref'])
         for key,value in node.items():
-            #Some final adjustments
             if key == 'address' and value == {}:
                 del node['address']
             elif key == 'address' and value != {}:
